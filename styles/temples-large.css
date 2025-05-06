@@ -1,0 +1,35 @@
+@media screen and (min-width: 510px) {
+    #menu-hamburger {
+        display: none;
+    }
+
+    #nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+    }
+
+    #nav li {
+        margin: 0 10px;
+    }
+
+    #temple-container {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        gap: 20px;
+    }
+
+    .temple-card {
+        margin: 0;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
