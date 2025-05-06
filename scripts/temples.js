@@ -1,5 +1,4 @@
 
-
     const hamButton = document.querySelector("#menu-hamburger");
     const ul = document.querySelector("ul");
 
