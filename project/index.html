@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131: Dynamic Web Fundamentals | Renniel Fernandez</title>
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals">
+    <meta name="author" content="Renniel D. Fernandez">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/nav-mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/nav-large.css" media="(min-width: 769px)">
+    <!-- CSS for mobile -->
+    <link rel="stylesheet" href="styles/" media="(max-width: 768px)">
+    <!-- CSS for larger screens -->
+    <link rel="stylesheet" href="styles/project-large.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/project.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="branding-project" href="index.html">DD Design & Development</a>
+      </div>
+      <button class="burger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1>Design & Software Development Firm</h1>
+          <p>We specialize in delivering creative design and robust software solutions that align with your brand and business goals. From intuitive UI/UX design to custom web and mobile app development, we provide end-to-end digital services that bring ideas to life and drive innovation.</p>
+          <!-- Social Media Icons and Contact Info -->
+          <div class="hero-contact">
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <span class="contact-number">📞 +23499423</span>
+          </div>
+          <a href="portfolio.html" class="hero-btn">View Portfolio</a>
+        </div>
+      </div>
+    </header>
+    <section class="hero-section">
+      <h1 class="hero-title">Our Services</h1>
+      <div class="services-grid">
+        <div class="service-box">
+          <h2>Web Design</h2>
+          <p>Creating beautiful, user-friendly designs that represent your brand.</p>
+        </div>
+        <div class="service-box">
+          <h2>Web Development</h2>
+          <p>Building responsive and modern websites using latest technologies.</p>
+        </div>
+        <div class="service-box">
+          <h2>Desktop Development</h2>
+          <p>Custom applications for Windows, macOS, and Linux platforms.</p>
+        </div>
+        <div class="service-box">
+          <h2>Mobile Development</h2>
+          <p>Native and cross-platform mobile apps for Android and iOS.</p>
+        </div>
+      </div>
+    </section>
+    <section id="sec-about">
+      <div class="sec-about-container">
+        <div class="sec-about-text">
+          <h2>About Us</h2>
+          <p> At the heart of our work is a commitment to creating exceptional digital experiences. Our team blends creativity, technical expertise, and a deep understanding of user behavior to deliver solutions that are both beautiful and functional. Web Design is where it all begins — we craft visually stunning, user-centered interfaces that reflect your brand’s personality and engage your audience. From intuitive layouts to thoughtful color palettes and typography, we ensure every design choice enhances usability and builds trust with your visitors. In Web Development, we transform design concepts into fully functional, responsive websites using the latest technologies such as HTML5, CSS3, JavaScript (including React.js), and native PHP. Whether it's a sleek portfolio site or a complex e-commerce platform, we build scalable, high-performance solutions optimized for speed, security, and SEO. Our Desktop Development services focus on building lightweight, efficient desktop tools using native PHP backends and React.js frontends. This modern stack allows us to create cross-platform applications that are easy to maintain, fast, and deeply integrated with web-based services or internal systems. With the growing demand for mobile-first solutions, we also specialize in Mobile Development for both Android and iOS platforms. Using technologies like React Native and native PHP APIs, we develop mobile apps that are intuitive, secure, and connected — delivering seamless experiences across devices. Together, these services form a complete digital ecosystem — designed to elevate your brand, engage your users, and grow your business in an increasingly connected world. </p>
+        </div>
+        <div class="sec-about-image">
+          <img src="images/about-us.webp" alt="Team working together" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        <span id="currentYear"></span> Renniel Fernandez | Philippines
+      </p>
+      <p class="highlight" id="lastModified">Last Modification: 05/07/2025 01:00:00 AM</p>
+    </footer>
+    <script src="scripts/nav-script.js"></script>
+  </body>
+</html>

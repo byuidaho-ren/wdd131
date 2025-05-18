@@ -1,0 +1,106 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.nav-links {
+  display: flex !important;
+  margin: 0;
+}
+.nav-links li {
+  margin-left: 2rem;
+}
+.menu-icon {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.banner {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.hero-columns, .service-items, .testimonial-items, .portfolio-items {
+  display: block;
+  padding: 1rem;
+}
+.hero-columns div, .service-items div {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.testimonials blockquote {
+  background: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #333;
+}
+.about, .cta {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Topfold CSS  */
+/* Mobile-first styles */
+
+.hero {
+  position: relative;
+  background: url('images/project-home-topfold.webp') no-repeat center center/cover;
+  color: white;
+  overflow: hidden;
+  width: 100vw; /* Ensure full viewport width */
+  height: 100vh; /* Ensure full viewport height */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center */
+  padding-left: 2rem; /* Space from left edge */
+  background-color: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+}
+
+.hero-text {
+  max-width: 90%; /* Ensure text doesn't overflow */
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #e05555;
+}
+
+/* hero section */

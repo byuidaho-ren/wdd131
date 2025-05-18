@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131: Dynamic Web Fundamentals | Renniel Fernandez</title>
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals">
+    <meta name="author" content="Renniel D. Fernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/nav-mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/nav-large.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/project.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="branding-project" href="index.html">DD Design & Development</a>
+      </div>
+      <button class="burger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="contact-us">
+      <div class="contact-slogan">
+        <h2> "Get in Touch with Us — We're Here to Help!" </h2>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>
+        <span id="currentYear"></span> Renniel Fernandez | Philippines
+      </p>
+      <p class="highlight" id="lastModified">Last Modification: 05/07/2025 01:00:00 AM</p>
+    </footer>
+    <script src="scripts/nav-script.js"></script>
+  </body>
+</html>

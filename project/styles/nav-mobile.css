@@ -1,0 +1,50 @@
+.logo {
+  font-size: 1.5rem;
+}
+
+.burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #444;
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  border-bottom: 1px solid #555;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
