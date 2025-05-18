@@ -74,3 +74,4 @@ window.addEventListener('click', function(e) {
     document.getElementById('modal').style.display = 'none';
   }
 });
+
