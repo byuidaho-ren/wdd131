@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131: Dynamic Web Fundamentals | Renniel Fernandez</title>
+  <meta name="description" content="WDD 131: Dynamic Web Fundamentals">
+  <meta name="author" content="Renniel D. Fernandez">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+
+     <div class="header">
+        <h1>Product Review</h1>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="container">
+        <form id="reviewForm" method="get" action="review.html">
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+            <div class="form-group">
+                <label>Which features did you find useful in the product? <br><span>(Check all that apply)</span></label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature1" name="features" value="Durability">
+                    <label for="feature1">Quality</label><br>
+                    <input type="checkbox" id="feature2" name="features" value="Ease of Use">
+                    <label for="feature2">User Friendly </label><br>
+                    <input type="checkbox" id="feature3" name="features" value="Performance">
+                    <label for="feature3">Performance</label><br>
+                    <input type="checkbox" id="feature4" name="features" value="Design">
+                    <label for="feature4">Optimized</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <p><span id="currentYear"></span> Renniel Fernandez | Philippines</p>
+    <p class="highlight" id="lastModified">Last Modification: 05/07/2025 01:00:00 AM</p>
+  </footer>
+
+   <script src="scripts/form.js"></script>
+
+</body>
+</html>
